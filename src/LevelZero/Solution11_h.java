@@ -1,6 +1,6 @@
 package LevelZero;
 
-class Solution11 {
+class Solution11_h {
     public String solution(String str1, String str2) {
         String answer = "" ;
         for (int i = 0; i < str1.length(); i++) {
@@ -13,8 +13,8 @@ class Solution11 {
     }
 
     static void main(String[] args) {
-        Solution11 solution11 = new Solution11();
-        String result = solution11.solution("aaaaa","bbbbb");
+        Solution11_h solution11H = new Solution11_h();
+        String result = solution11H.solution("aaaaa","bbbbb");
         System.out.println(result);
     }
 }

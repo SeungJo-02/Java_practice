@@ -1,6 +1,6 @@
 package LevelZero;
 
-class Solution10 {
+class Solution10_h {
     public String solution(String my_string, String overwrite_string, int s) {
         //앞부분
         String first = my_string.substring(0,s);
@@ -13,7 +13,7 @@ class Solution10 {
     }
 
     public static void main(String[] args) {
-        Solution10 sol = new Solution10();
+        Solution10_h sol = new Solution10_h();
         System.out.println(sol.solution("He11oWor1d",	"lloWorl",2));
     }
 }
