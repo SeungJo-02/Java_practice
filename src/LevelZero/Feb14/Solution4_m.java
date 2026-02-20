@@ -2,7 +2,7 @@ package LevelZero.Feb14;
 
 import java.util.Scanner;
 
-public class Solution4 {
+public class Solution4_m {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         String a = sc.next();
@@ -11,9 +11,9 @@ public class Solution4 {
             char c = a.charAt(i);
 
             if (Character.isUpperCase(c)) {
-                System.out.print(Character.toLowerCase(c));
+                System.out.print(Character.toLowerCase(c));//toLowerCase 인지 isLowerCase
             } else {
-                System.out.print(Character.toUpperCase(c));
+                System.out.print(Character.toUpperCase(c));//toLowerCase 인지 isLowerCase
             }
         }
     }

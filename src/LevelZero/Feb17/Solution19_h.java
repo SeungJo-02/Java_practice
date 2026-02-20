@@ -1,6 +1,6 @@
 package LevelZero.Feb17;
 
-public class Solution19 {
+public class Solution19_h {
     public int solution(String ineq, String eq, int n, int m) {
         String oper = ineq + eq;
         boolean result = false;

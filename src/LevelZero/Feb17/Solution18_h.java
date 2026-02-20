@@ -1,6 +1,6 @@
 package LevelZero.Feb17;
 
-public class Solution18 {
+public class Solution18_h {
     public int solution(int n) {
         int answer = 0;
         if (n % 2 != 0) {// 홀수라면
@@ -25,7 +25,7 @@ public class Solution18 {
     }
 
     static void main(String[] args) {
-        Solution18 solution19 =new Solution18();
+        Solution18_h solution19 =new Solution18_h();
         int result = solution19.solution(10);
         System.out.println(result);
     }
