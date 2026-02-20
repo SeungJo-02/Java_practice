@@ -1,15 +1,14 @@
 package LevelZero.Feb18;
 
-public class Solution22 {
-    public int solution(int a, int b, int c){
-        int result = 0;
-        if (a == b && b == c) {
-            result = (a + b + c) * (a * a + b * b + c * c) * (a * a * a + b * b * b + c * c * c);
-        } else if (a != b && b != c && a != c) {
-            result =  a + b + c;
+class Solution22 {
+    public int solution(int a, int d, boolean[] included) {
+        int answer = 0;
 
-        } else if (a == b || b == c || a == c) {
-            result =  (a + b + c) * (a * a + b * b + c * c);
-        }return result;
+        for (int i = 0; i < included.length; i++) {
+            if (included[i]) {
+                answer += a + (i*d);
+            }
+        }
+return answer;
     }
 }

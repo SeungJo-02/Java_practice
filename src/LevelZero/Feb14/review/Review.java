@@ -4,6 +4,19 @@ package LevelZero.Feb14.review;
 import java.util.Scanner;
 public class Review {
     public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        String a = sc.next();
+        StringBuffer c = new StringBuffer();
 
+        for (int i = 0; i < a.length(); i++) {
+            char word = a.charAt(i);
+
+            if (Character.isUpperCase(word)) {
+                c.append(Character.toLowerCase(word));
+            } else {
+                c.append(Character.toUpperCase(word));
+            }
+
+        }System.out.println(c.toString());
     }
 }

@@ -1,6 +1,6 @@
 package LevelZero.Feb19;
 
-public class Solution27_h {
+public class Solution27 {
     public int solution(int n, String control) {
         int len = control.length();
         for (int i = 0; i < len; i++) {

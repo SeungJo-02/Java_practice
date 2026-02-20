@@ -12,7 +12,7 @@ class Solution11_2 {
         return answer;
     }
     static void main(String[] args) {
-        Solution11_h solution11_2 = new Solution11_h();
+        Solution11 solution11_2 = new Solution11();
         String result = solution11_2.solution("aaaaa","bbbbb");
         System.out.println(result);
     }

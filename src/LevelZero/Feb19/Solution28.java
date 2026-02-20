@@ -1,6 +1,6 @@
 package LevelZero.Feb19;
 
-public class Solution28_h {
+public class Solution28 {
     public String solution(int[] numLog) {
         int len = numLog.length;
 

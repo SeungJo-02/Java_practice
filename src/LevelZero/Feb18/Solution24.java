@@ -2,32 +2,20 @@ package LevelZero.Feb18;
 
 class Solution24 {
     public int solution(int[] num_list) {
-        String addOdd ="";
-        String addEven ="";
-        int answer = 0;
+        int result = 0;
+        int sum = 0;
+        int mul = 1; // 얌마 곱셈인데 0을 곱하면 우짜냐...
 
         for (int i = 0; i < num_list.length; i++) {
-            if (num_list[i] % 2  == 1) {// 홀수라면
-                addOdd += num_list[i];
-            }else {
-                addEven += num_list[i];
-            }
+            sum += num_list[i];
+            mul *= num_list[i];
         }
-        answer = Integer.parseInt(addOdd) + Integer.parseInt(addEven);
+        if (Math.pow(sum,2) > mul) {
+            result = 1;
+        } else {
+            result = 0;
+        }
 
-        return answer;
+        return result;
     }
 }
-
-//class Solution {
-//    public int solution(int[] num_list) {
-//        StringBuilder a = new StringBuilder();
-//        StringBuilder b = new StringBuilder();
-//
-//        for (int num : num_list) {
-//            (num % 2 == 0 ? a : b).append(num);
-//        }
-//
-//        return Integer.parseInt(a.toString()) + Integer.parseInt(b.toString());
-//    }
-//}
