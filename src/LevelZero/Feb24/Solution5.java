@@ -5,7 +5,7 @@ public class Solution5 {
         StringBuffer str =new StringBuffer();
 
         for (int i = 0; i < code.length(); i++) {
-            if (i%q == r) {
+            if (i % q == r) {
                 str.append(code.charAt(i));
             }
         }

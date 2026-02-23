@@ -7,10 +7,10 @@ public class Solution2 {
         ArrayList<String> arr = new ArrayList<>();
 
         for (int i = 0; i < my_string.length(); i++) {
-            arr.add(my_string.substring(0,i));
+            arr.add(my_string.substring(0 , i));
         }
 
-        return arr.contains(is_prefix) ? 1:0;
+        return arr.contains(is_prefix) ? 1 : 0;
     }
 }
 
