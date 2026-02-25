@@ -1,0 +1,26 @@
+package LevelZero.Feb14_1;
+
+import java.util.Scanner;
+
+public class Solution4_m {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        String a = sc.next();
+
+        for (int i = 0; i < a.length(); i++) {
+            char c = a.charAt(i);
+
+            if (Character.isUpperCase(c)) {
+                System.out.print(Character.toLowerCase(c));//toLowerCase 인지 isLowerCase
+            } else {
+                System.out.print(Character.toUpperCase(c));//toLowerCase 인지 isLowerCase
+            }
+        }
+    }
+}
+
+
+
+
+
+

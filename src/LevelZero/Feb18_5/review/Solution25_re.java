@@ -1,0 +1,27 @@
+package LevelZero.Feb18_5.review;
+
+public class Solution25_re {
+    public int solution(int[] num_list) {
+
+        String odd = "";
+        String even = "";
+
+        for (int i = 0; i < num_list.length; i++) {
+            if (num_list[i] % 2 == 0) {
+                even += num_list[i] + "";
+            } else {
+                odd += num_list[i] + "";
+            }
+        }
+
+        return Integer.parseInt(odd) + Integer.parseInt(even);
+    }
+
+//    static void main(String[] args) {
+//        Solution25_re solution25Re = new Solution25_re();
+//        int[] li = {5,7,8,3};
+//        int result = solution25Re.solution(li);
+//        System.out.println(result);
+//    }
+
+}
