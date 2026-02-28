@@ -1,14 +1,14 @@
-package LevelZero.Feb26_12;
+package LevelZero.Feb28_Re;
 
 import java.util.Arrays;
 
-public class Solution5_h {
+public class Solution4 {
     public int[] solution(int[] arr, int[] query) {
 
         for (int i = 0; i < query.length; i++) {
             if (i%2 == 0) {
                 arr = Arrays.copyOfRange(arr,0,query[i]+1);
-            } else {
+            }else {
                 arr = Arrays.copyOfRange(arr,query[i],arr.length);
             }
         }
